@@ -171,6 +171,7 @@
     self.title = NSLocalizedString(@"GKIchoosePhoto", @"");
 
     [self _setupNavigationBar];
+    [self _setupCropView];
     [self _setupToolbar];
 
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
@@ -198,6 +199,6 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
   [super viewDidAppear:animated];
-  [self _setupCropView];
+
 }
 @end
